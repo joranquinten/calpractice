@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Game config should expose the default configuration 1`] = `
+Object {
+  "maxTimePerRound": 30000,
+  "numberOfAssignments": 10,
+  "numberOfLives": 3,
+}
+`;
