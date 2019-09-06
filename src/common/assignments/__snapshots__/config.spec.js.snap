@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Assignemnts config should expose the default configurations 1`] = `
+Array [
+  Object {
+    "complexity": 1,
+    "operator": "+",
+  },
+  Object {
+    "complexity": 2,
+    "operator": "-",
+  },
+  Object {
+    "complexity": 3,
+    "operator": "*",
+  },
+  Object {
+    "complexity": 4,
+    "operator": "/",
+  },
+]
+`;
+
+exports[`Assignemnts config should expose the default configurations 2`] = `
+Array [
+  Object {
+    "complexity": 1,
+    "high": 10,
+    "low": 0,
+  },
+  Object {
+    "complexity": 2,
+    "high": 100,
+    "low": 0,
+  },
+]
+`;
