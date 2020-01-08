@@ -2,10 +2,14 @@ import { operators, ranges } from "./config";
 
 class Assignment {
   constructor(
-    config = { numberOfAssignments: 1, complexity: 1, onAssignmentEnd: null }
+    config = {
+      numberOfAssignments: null,
+      complexity: null,
+      onAssignmentEnd: null
+    }
   ) {
     this.numberOfAssignments = config.numberOfAssignments;
-    this.complexity = config.complexity;
+    this.complexity = config.complexity || 1;
     this.assignments = [];
     this.currentIndex = 0;
     this.callback = config.onAssignmentEnd;

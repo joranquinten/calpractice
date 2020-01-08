@@ -6,9 +6,9 @@ import { parameters } from "./config";
 class Game {
   constructor(
     config = {
-      maxTimePerRound: parameters.maxTimePerRound,
-      numberOfAssignments: parameters.numberOfAssignments,
-      numberOfLives: parameters.numberOfLives,
+      maxTimePerRound: null,
+      numberOfAssignments: null,
+      numberOfLives: null,
       success: null,
       failure: null,
       end: null
@@ -69,10 +69,6 @@ class Game {
   }
 
   reset() {
-    this.assignments = new Assignment({
-      numberOfAssignments: this.numberOfAssignments,
-      onAssignmentEnd: this.onSuccess
-    });
     this.allAssignments = [];
 
     this.timer.setRemainingTime(0);
@@ -98,6 +94,7 @@ class Game {
     if (this.currentAssignment + 1 < this.allAssignments.length) {
       this.currentAssignment++;
     } else {
+      if (this.timer) this.timer.stop();
       if (this.onSuccess) this.onSuccess();
     }
   }

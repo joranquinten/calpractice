@@ -1,5 +1,5 @@
 {
-  "name": "pracal",
+  "name": "calpractice",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,7 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "ant-design-vue": "^1.3.16",
     "core-js": "^2.6.5",
     "vue": "^2.6.10"
   },
